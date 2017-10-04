@@ -128,7 +128,7 @@ for(i in 1:nrow(articleDF_all)){
 
 
 #remove bad entries in location
-articleDF$location[grep('[A-Z]+[a-z]+', articleDF$location)] <- NA
+articleDF_all$location[grep('[A-Z]+[a-z]+', articleDF_all$location)] <- NA
 
 
 # filter out money.cnn.com articles (website formats are different)
